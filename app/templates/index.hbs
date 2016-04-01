@@ -4,4 +4,8 @@
   {{#each model as |question|}}
     {{question-tile question=question}}
   {{/each}}
+
+  <hr>
+  
+  {{new-question question=model saveQuestion="saveQuestion"}}
 </div>

@@ -6,5 +6,17 @@
   "content": "What is Rails?",
   "author": "Me, a year ago",
   "notes": "I don't know what I'm doing"
+  }, {
+  "content": "Can anyone give me some CSS tricks?",
+  "author": "Khal Drogo",
+  "notes": "Particularly for  sticky footers! They're trouble."
+  }, {
+  "content": "My app crashed! What do?",
+  "author": "Leslie Knope",
+  "notes": "EVERYTHIG IS GONE AND I DON'T KNOW HOW TO GET IT BACK HELP"
+  }, {
+  "content": "How to connect multiple models together with ember?",
+  "author": "Me, today",
+  "notes": "I know how to connect two together, but what about more than two?"
   }]
 }

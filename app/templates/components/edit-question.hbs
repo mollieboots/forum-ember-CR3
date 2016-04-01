@@ -13,7 +13,7 @@
         <label for="body">Additional Notes:</label>
         {{input class="form-control" id="notes" value=question.notes}}
       </div>
-      <button type="button" class="btn btn-primary" {{action 'updateQuestion'}}>Update Question</button>
+      <button type="button" class="btn btn-success" {{action 'updateQuestion' question}}>Update Question</button>
       <button type="button" class="btn btn-warning" {{action 'editQuestionFormHide'}}>Cancel</button>
     </form>
   </div>
