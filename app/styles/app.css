@@ -1,0 +1,14 @@
+.footer {
+  width: 100%;
+  clear: both;
+  height: 75px;
+  background-color: grey;
+}
+
+.body-col {
+  padding-bottom: 75px;
+}
+
+.edit-question {
+  max-width: 100%;
+}

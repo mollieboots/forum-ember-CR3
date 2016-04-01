@@ -1,0 +1,10 @@
+{ "questions": [{
+  "content": "How do I install bootstrap?",
+  "author": "Sierra Anderson",
+  "notes": "I've never used front end frameworks before! What's the simplest way to make my page look good?"
+  }, {
+  "content": "What is Rails?",
+  "author": "Me, a year ago",
+  "notes": "I don't know what I'm doing"
+  }]
+}
