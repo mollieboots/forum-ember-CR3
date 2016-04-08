@@ -4,8 +4,8 @@
     <h3>{{answer.rating}}</h3>
   </div>
   <div class="col-sm-2">
-    <button type="button" class="btn btn-xs btn-success" {{action 'upvote' answer.id}}>^</button>
-    <button type="button" class="btn btn-xs btn-warning" {{action 'downvote' answer.id}}>ˇ</button>
+    <button type="button" class="btn btn-xs btn-success" {{action 'upvote' answer.id}}><span class="glyphicon glyphicon-arrow-up"></span></button>
+    <button type="button" class="btn btn-xs btn-warning" {{action 'downvote' answer.id}}><span class="glyphicon glyphicon-arrow-down"></span></button>
   </div>
   <div class="col-sm-8">
     <h5>{{answer.author}}</h5>
