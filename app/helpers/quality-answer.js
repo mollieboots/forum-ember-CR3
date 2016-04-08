@@ -1,11 +1,12 @@
 import Ember from 'ember';
 
 export function qualityAnswer(params/*, hash*/) {
-  var answer = params[0];
+  var answerRating = params[0].get('rating');
+  console.log(answerRating);
 
-  if(answer.get('rating') > 3) {
-    console.log(answer.rating);
-    return Ember.String.htmlSafe('<span class="glyphicon glyphicon-fire"></span>');
+  if(answerRating >= 3) {
+    console.log("working");
+    return Ember.String.htmlSafe('<span class="glyphicon glyphicon-ok"></span>');
   }
 }
 

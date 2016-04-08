@@ -37,6 +37,7 @@ export default Ember.Route.extend({
         answer.save();
       });
       this.refresh();
+
     },
     downvote(answerId) {
       this.store.findRecord('answer', answerId).then(function(answer) {
