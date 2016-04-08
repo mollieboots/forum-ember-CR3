@@ -1,7 +1,6 @@
-# Forum
+# Forum 
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Ask questions and have others answer them! Now with upvoting and downvoting for improved access to better answers.
 
 ## Prerequisites
 
