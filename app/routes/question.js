@@ -13,6 +13,37 @@ export default Ember.Route.extend({
         }
       });
       question.save();
+    },
+    deleteQuestion(question) {
+      var answerDeletions = question.get('answers').map(function(answer) {
+        return answer.destroyRecord();
+      });
+      Ember.RSVP.all(answerDeletions).then(function() {
+        return question.destroyRecord();
+      });
+      this.transitionTo('index');
+    },
+    newAnswerSubmit(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      var question = params.question;
+      question.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function() {
+        return question.save();
+      });
+    },
+    upvote(answerId) {
+      this.store.findRecord('answer', answerId).then(function(answer) {
+        answer.incrementProperty('rating');
+        answer.save();
+      });
+      this.refresh();
+    },
+    downvote(answerId) {
+      this.store.findRecord('answer', answerId).then(function(answer) {
+        answer.decrementProperty('rating');
+        answer.save();
+      });
+      this.refresh();
     }
   }
 });

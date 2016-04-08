@@ -1,6 +1,17 @@
 <hr>
-<div class="answer-tile">
-  <h5>{{answer.author}}</h5>
-  <p><strong>{{answer.date}}</strong></p>
-  <p>{{answer.content}}</p>
+<div class="row answer-tile">
+  <div class="col-sm-1">
+    <h3>{{answer.rating}}</h3>
+  </div>
+  <div class="col-sm-2">
+    <button type="button" class="btn btn-xs btn-success" {{action 'upvote' answer.id}}>^</button>
+    <button type="button" class="btn btn-xs btn-warning" {{action 'downvote' answer.id}}>ˇ</button>
+  </div>
+  <div class="col-sm-8">
+    <h5>{{answer.author}}</h5>
+    <p class="pull-left">{{answer.content}}</p>
+  </div>
+  <div class="col-sm-1">
+    <button type="button" class="btn btn-sm btn-danger pull-right" {{action 'deleteAnswer' answer}}>x</button>
+  </div>
 </div>

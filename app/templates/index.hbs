@@ -1,4 +1,4 @@
-<div class="col-md-8 col-md-offset-2 body-col">
+<div class="body-col">
   <h1>Browse through Questions</h1>
 
   {{#each model as |question|}}
@@ -6,6 +6,6 @@
   {{/each}}
 
   <hr>
-  
+
   {{new-question question=model saveQuestion="saveQuestion"}}
 </div>
