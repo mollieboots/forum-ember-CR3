@@ -14,9 +14,12 @@ export default Ember.Component.extend({
         content: this.get('content'),
         author: this.get('author'),
         notes: this.get('notes')
-      }
+      };
       this.sendAction('updateQuestion', question, params);
       this.set('editQuestionForm', false);
+    },
+    deleteQuestion(question) {
+      this.sendAction('deleteQuestion', question);
     }
   }
 });
