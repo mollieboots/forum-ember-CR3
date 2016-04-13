@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('question');
+    return Ember.RSVP.hash({
+      questions: this.store.findAll('question'),
+      answers: this.store.findAll('answer')
+    });
   },
 
   favoriteQuestions: Ember.inject.service(),
@@ -16,7 +19,7 @@ export default Ember.Route.extend({
     },
     favorite(question) {
       console.log('made it');
-      this.get('favoriteQuestions').add(question);
+      this.get('favorites').add(question);
     }
   }
 });

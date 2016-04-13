@@ -10,7 +10,7 @@
   <div class="row">
     {{edit-question question=model updateQuestion="updateQuestion"}}
 
-    <button type="button" class="btn btn-danger" {{action 'deleteQuestion'}}>Delete</button>
+    <button type="button" class="btn btn-danger" {{action 'deleteQuestion' question}}>Delete</button>
   </div>
   <hr>
   {{new-answer question=model newAnswerSubmit="newAnswerSubmit"}}

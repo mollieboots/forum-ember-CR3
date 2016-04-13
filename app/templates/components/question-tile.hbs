@@ -1,8 +1,7 @@
 <hr>
 <div class="question-tile">
 
-    {{#link-to 'question' question.id}}<h3>{{question.content}}</h3>{{/link-to}}
-    <h5>{{question.author}}</h5>
+    {{#link-to 'question' question.id}}<h3>{{ConcatQuestion}}</h3>{{/link-to}}
     <p>{{question.date}}</p>
     <button type="button" class="btn btn-xs btn-warning" {{action 'favorite' question}}><span class="glyphicon glyphicon-star"></span></button>
 

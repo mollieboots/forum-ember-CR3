@@ -5,7 +5,6 @@ export function qualityAnswer(params/*, hash*/) {
   console.log(answerRating);
 
   if(answerRating >= 3) {
-    console.log("working");
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-ok"></span>');
   }
 }
