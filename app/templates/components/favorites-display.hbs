@@ -1,5 +1,5 @@
 <h2>Your Starred Questions</h2>
 <hr>
-{{#each favorites.questions as |question|}}
-  <h4>{{question.content}}</h4>
+{{#each favoriteQuestions.favorites as |favorite|}}
+  <h3>{{favorite.content}} | {{favorite.author}}</h3>
 {{/each}}
